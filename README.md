@@ -11,8 +11,8 @@
 import (
 	"log"
 	"os"
-
-    "github.com/hirac1220/go/go-file-validate/utils/file"
+	
+	"github.com/hirac1220/go/go-file-validate/utils/file"
 )
 
 func main() {
