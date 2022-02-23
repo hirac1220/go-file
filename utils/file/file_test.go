@@ -25,7 +25,7 @@ func TestCheckFileSize(t *testing.T) {
 
 func TestValidateJPEG(t *testing.T) {
 	// arrange
-	expected := JPG
+	expected := JPEG
 	bytes, _ := os.ReadFile("../../sample/image.jpeg")
 
 	// action
@@ -40,7 +40,7 @@ func TestValidateJPEG(t *testing.T) {
 
 func TestValidateJPG(t *testing.T) {
 	// arrange
-	expected := JPG
+	expected := JPEG
 	bytes, _ := os.ReadFile("../../sample/image.jpg")
 
 	// action
@@ -70,7 +70,7 @@ func TestValidatePNG(t *testing.T) {
 
 func TestJPGExtToContentType(t *testing.T) {
 	// arrange
-	expected := JPG
+	expected := JPEG
 	f, _ := os.Open("../../sample/image.jpg")
 	defer func() {
 		_ = f.Close()
@@ -81,7 +81,7 @@ func TestJPGExtToContentType(t *testing.T) {
 	if fi, err := f.Stat(); err == nil {
 		ext = ExtractExt(fi.Name())
 	}
-	actual := ExtToContentType(ext)
+	actual, _ := ExtToContentType(ext)
 
 	// assert
 	assert.Equal(t, expected, actual)
@@ -89,7 +89,7 @@ func TestJPGExtToContentType(t *testing.T) {
 
 func TestJPEGExtToContentType(t *testing.T) {
 	// arrange
-	expected := JPG
+	expected := JPEG
 	f, _ := os.Open("../../sample/image.jpeg")
 	defer func() {
 		_ = f.Close()
@@ -100,7 +100,7 @@ func TestJPEGExtToContentType(t *testing.T) {
 	if fi, err := f.Stat(); err == nil {
 		ext = ExtractExt(fi.Name())
 	}
-	actual := ExtToContentType(ext)
+	actual, _ := ExtToContentType(ext)
 
 	// assert
 	assert.Equal(t, expected, actual)
@@ -119,7 +119,7 @@ func TestPNGExtToContentType(t *testing.T) {
 	if fi, err := f.Stat(); err == nil {
 		ext = ExtractExt(fi.Name())
 	}
-	actual := ExtToContentType(ext)
+	actual, _ := ExtToContentType(ext)
 
 	// assert
 	assert.Equal(t, expected, actual)
