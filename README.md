@@ -1,10 +1,18 @@
-package main
+# Go File Validate
 
+## Overview
+* Check File Size
+* Validate File
+* Extension to ContentType
+
+## Usage
+
+```
 import (
 	"log"
 	"os"
 
-	"github.com/hirac1220/go/go-file-validate/utils/file"
+    "github.com/hirac1220/go/go-file-validate/utils/file"
 )
 
 func main() {
@@ -34,3 +42,12 @@ func main() {
 	}
 	log.Printf("mine: %s", mine)
 }
+```
+
+## Results:
+```
+$ go run main.go
+2022/02/23 17:51:29 size: 2604
+2022/02/23 17:51:29 content type: image/jpeg
+2022/02/23 17:51:29 mine: image/jpeg
+```
