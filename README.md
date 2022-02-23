@@ -7,7 +7,7 @@
 
 ## Usage
 
-```
+```Go
 import (
 	"log"
 	"os"
