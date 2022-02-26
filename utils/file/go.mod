@@ -1,4 +1,4 @@
-module github.com/hirac1220/go-monorepo/utils/file
+module github.com/hirac1220/go-file-validate/utils/file
 
 go 1.17
 

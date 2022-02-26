@@ -1,0 +1,14 @@
+mode: set
+github.com/hirac1220/go-file-validate/utils/file/file.go:28.47,29.20 1 1
+github.com/hirac1220/go-file-validate/utils/file/file.go:32.2,32.18 1 1
+github.com/hirac1220/go-file-validate/utils/file/file.go:29.20,31.3 1 0
+github.com/hirac1220/go-file-validate/utils/file/file.go:35.49,38.9 2 1
+github.com/hirac1220/go-file-validate/utils/file/file.go:39.20,40.19 1 1
+github.com/hirac1220/go-file-validate/utils/file/file.go:41.19,42.19 1 1
+github.com/hirac1220/go-file-validate/utils/file/file.go:43.10,44.69 1 0
+github.com/hirac1220/go-file-validate/utils/file/file.go:48.37,53.2 2 1
+github.com/hirac1220/go-file-validate/utils/file/file.go:55.51,56.9 1 1
+github.com/hirac1220/go-file-validate/utils/file/file.go:57.21,58.19 1 1
+github.com/hirac1220/go-file-validate/utils/file/file.go:59.22,60.19 1 1
+github.com/hirac1220/go-file-validate/utils/file/file.go:61.21,62.18 1 1
+github.com/hirac1220/go-file-validate/utils/file/file.go:63.10,64.70 1 0

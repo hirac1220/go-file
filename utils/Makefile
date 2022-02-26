@@ -28,3 +28,7 @@ test_all: test_file
 
 test_file:
 	cd file && go test -v -coverpkg=. ./...
+
+test_cover_file:
+	cd file && go test -v -coverprofile=cover_file.out  -coverpkg=./...
+	cd file && go tool cover -html=cover_file.out -o cover_file.html
