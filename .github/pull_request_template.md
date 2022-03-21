@@ -1,2 +1,3 @@
-### レビュー前チェック項目
-- [ ] make precommit の実行
+### レビュー前チェック
+- [ ] make precommit
+
