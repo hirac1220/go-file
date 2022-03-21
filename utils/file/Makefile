@@ -1,3 +1,13 @@
+# install packages
+install:
+	go install golang.org/x/tools/cmd/goimports@latest
+	go install github.com/kisielk/errcheck@latest
+	go install honnef.co/go/tools/cmd/staticcheck@latest
+	brew install golangci-lint
+	brew upgrade golangci-lint
+	curl -sfL https://raw.githubusercontent.com/securego/gosec/master/install.sh | sh -s -- -b $(GOPATH)/bin latest
+
+
 # precommit check
 precommit: goimports fmt errcheck staticcheck gosec
 
